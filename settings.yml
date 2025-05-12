@@ -15,9 +15,8 @@ server:
     Referrer-Policy: no-referrer
 
 limiter:
-  # Redis-backed rate limiting
   type: "redis"
-  redis_url: "${REDIS_URL}"    # Fly has already set this for you
+  redis_url: "${REDIS_URL}"
   prefix: "searxng:limiter"
   default_rules: true
 
