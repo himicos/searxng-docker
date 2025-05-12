@@ -1,10 +1,10 @@
-cat > settings.yml << 'EOF'
 general:
   instance_name: "searxng-everion"
 
 server:
   base_url: "https://searx.everion.ai"
   secret_key: "${SECRET_KEY}"
+
   limiter: true
   public_instance: true
   image_proxy: true
@@ -26,5 +26,3 @@ search:
 anti_captcha:
   enabled: true
   api_key: "${ANTICAPTCHA_KEY}"
-EOF
-
