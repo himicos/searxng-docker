@@ -1,3 +1,5 @@
+# ── your existing settings.yml ──
+
 general:
   instance_name: "searxng-everion"
 
@@ -14,9 +16,12 @@ server:
     X-Robots-Tag: noindex,nofollow
     Referrer-Policy: no-referrer
 
-# ← add this
-redis:
-  url: "${REDIS_URL}"
+# ── new limiter section ──
+limiter:
+  type: "redis"
+  redis_url: "${REDIS_URL}"
+  prefix: "searxng:limiter"
+  default_rules: true
 
 search:
   proxies:
