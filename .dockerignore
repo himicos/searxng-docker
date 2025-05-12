@@ -1,9 +1,9 @@
-# keep our config
+# allow the searxng settings into the build context
 !settings.yml
 
-# now ignore everything else brought in by gitignore
-**/*
+# flyctl launch added from .gitignore
 **/*~
+
 **/searxng-docker.service
 **/caddy
 **/srv
