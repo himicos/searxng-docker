@@ -1,3 +1,4 @@
+cat > settings.yml << 'EOF'
 general:
   instance_name: "searxng-everion"
 
@@ -25,3 +26,5 @@ search:
 anti_captcha:
   enabled: true
   api_key: "${ANTICAPTCHA_KEY}"
+EOF
+
