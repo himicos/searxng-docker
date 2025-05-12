@@ -1,3 +1,6 @@
+# un-ignore your settings file first
+!settings.yml
+
 # flyctl launch added from .gitignore
 **/*~
 
