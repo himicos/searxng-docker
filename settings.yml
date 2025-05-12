@@ -1,1 +1,27 @@
-<paste the above YAML here>
+general:
+  instance_name: "searxng-everion"
+
+server:
+  base_url: "https://searx.everion.ai"
+  secret_key: "${SECRET_KEY}"
+  limiter: true
+  public_instance: true
+  image_proxy: true
+  method: GET
+  default_http_headers:
+    X-Content-Type-Options: nosniff
+    X-Download-Options: noopen
+    X-Robots-Tag: noindex,nofollow
+    Referrer-Policy: no-referrer
+
+search:
+  proxies:
+    http: "${PROXIES}"
+    https: "${PROXIES}"
+  formats:
+    - html
+    - json
+
+anti_captcha:
+  enabled: true
+  api_key: "${ANTICAPTCHA_KEY}"
