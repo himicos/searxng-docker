@@ -4,7 +4,6 @@ general:
 server:
   base_url: "https://searx.everion.ai"
   secret_key: "${SECRET_KEY}"
-
   limiter: true
   public_instance: true
   image_proxy: true
@@ -14,6 +13,10 @@ server:
     X-Download-Options: noopen
     X-Robots-Tag: noindex,nofollow
     Referrer-Policy: no-referrer
+
+# ← add this
+redis:
+  url: "${REDIS_URL}"
 
 search:
   proxies:
@@ -26,3 +29,4 @@ search:
 anti_captcha:
   enabled: true
   api_key: "${ANTICAPTCHA_KEY}"
+
