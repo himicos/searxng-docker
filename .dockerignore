@@ -1,0 +1,23 @@
+# editor/backups
+**/*~
+
+# systemd unit & caddy
+**/searxng-docker.service
+**/caddy
+**/srv
+
+# uwsgi config
+**/searxng/uwsgi.ini
+
+# Fly config (we commit this, so leave it if you want)
+fly.toml
+
+# local secrets/config
+settings.yml
+.env
+
+# Python bytecode & logs
+__pycache__/
+*.py[cod]
+*.log
+
