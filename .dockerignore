@@ -1,9 +1,9 @@
-# un-ignore your settings file first
+# keep our config
 !settings.yml
 
-# flyctl launch added from .gitignore
+# now ignore everything else brought in by gitignore
+**/*
 **/*~
-
 **/searxng-docker.service
 **/caddy
 **/srv
