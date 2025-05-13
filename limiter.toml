@@ -1,0 +1,6 @@
+# limiter.toml
+# Use Redis for rate-limiting
+type      = "redis"
+redis_url = "${REDIS_URL}"        # Fly has already set this for you
+prefix    = "searxng:limiter"
+default_rules = true             # include the built-in rules
